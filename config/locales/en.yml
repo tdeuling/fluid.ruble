@@ -1,0 +1,11 @@
+en:
+  bundle_name: 'Fluid'
+  fluidNamespace: 'Fluid namespace'
+  fluidLayout: 'Fluid layout'
+  fluidSection: 'Fluid section'
+  fluidFlashMessages: 'Fluid flashMessages'
+  fluidTranslate: 'Fluid translate'
+  fluidIf: 'Fluid if'
+  fluidThen: 'Fluid then'
+  fluidElse: 'Fluid else'
+  fluidImage: 'Fluid image'
