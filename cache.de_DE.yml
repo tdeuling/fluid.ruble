@@ -1,0 +1,280 @@
+!!com.aptana.scripting.model.BundleElement
+author: Thomas Deuling
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: key_value
+    customProperties: null
+    displayName: key_value
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: add_list_item
+    customProperties: null
+    displayName: add_list_item
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: sort_keys_alphabetically
+    customProperties: null
+    displayName: sort_keys_alphabetically
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: convert_to_ruby
+    customProperties: null
+    displayName: convert_to_ruby
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: cheat_sheet
+    customProperties: null
+    displayName: cheat_sheet
+    path: bundle.rb
+    scope: null
+  commandName: Fluid
+  customProperties: null
+  displayName: Fluid
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [namespace]
+  description: null
+  displayName: Fluid namespace
+  expansion: '{namespace ${1:name} = ${1:viewHelper}}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:layout']
+  description: null
+  displayName: Fluid layout
+  expansion: <f:layout name="${1:name}"></f:layout>${2}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:section']
+  description: null
+  displayName: Fluid section
+  expansion: <f:section name="${1:name}">${2}</f:section>
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:flashMessages']
+  description: null
+  displayName: Fluid flashMessages
+  expansion: <f:flashMessages></f:flashMessages>${2}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:translate']
+  description: null
+  displayName: Fluid translate
+  expansion: <f:translate key="${1:key}"></f:translate>${2}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:if']
+  description: null
+  displayName: Fluid if
+  expansion: <f:if condition="{${1:condition}}"></f:if>${2}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:then']
+  description: null
+  displayName: Fluid then
+  expansion: <f:then></f:then>${1}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:else']
+  description: null
+  displayName: Fluid else
+  expansion: <f:else></f:else>${1}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:image']
+  description: null
+  displayName: Fluid image
+  expansion: <f:image src="${1:src}" alt="{${1:alt}}"></f:image>${3}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['<f:count']
+  description: null
+  displayName: fluidCount
+  expansion: <f:count subject="${1:myarray}"></f:count>${2}
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: ['f:flashMessages']
+  description: null
+  displayName: Fluid flashMessages template
+  expansion: "\t<div class=\"tx-coding-ms-base-flashMessages flashMessages\">\n\t\t\
+    <f:flashMessages></f:flashMessages>\n\t</div>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+copyright: null
+customProperties: {contact_email_rot_13: glcb3@pbqvat.zf}
+decreaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s+\}$)'}
+description: '<a href="http://wiki.typo3.org/Fluid">Fluid</a> is a template engine
+  used by Typo3 and Flow3
+
+  '
+displayName: Fluid
+fileTypeRegistry: {}
+fileTypes: []
+foldingStartMarkers: {}
+foldingStopMarkers: {}
+increaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s*.*(:|-) ?(&\w+)?(\{[^}"'']*|\([^)"'']*)?$)'}
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: null
+visible: true
