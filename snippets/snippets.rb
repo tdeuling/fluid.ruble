@@ -18,13 +18,18 @@
 # Fluid-Snippets
 #####################################
 snippet t(:fluidNamespace) do |snip|
-  snip.trigger = "namespace"
+  snip.trigger = "{namespace"
   snip.expansion = "{namespace ${1:name} = ${1:viewHelper}}"
 end
  
 snippet t(:fluidLayout) do |snip|
   snip.trigger = "<f:layout"
   snip.expansion = "<f:layout name=\"${1:name}\"></f:layout>${2}"
+end
+ 
+snippet t(:fluidRender) do |snip|
+  snip.trigger = "<f:render"
+  snip.expansion = "<f:render section=\"${1:sectionname}\"></f:render>${2}"
 end
  
 snippet t(:fluidSection) do |snip|
@@ -37,9 +42,19 @@ snippet t(:fluidFlashMessages) do |snip|
   snip.expansion = "<f:flashMessages></f:flashMessages>${2}"
 end
 
+snippet t(:fluidFlashMessagesInDiv) do |snip|
+  snip.trigger = "<f:flashMessages"
+  snip.expansion = "<f:flashMessages renderMode=\"div\"></f:flashMessages>${2}"
+end
+
 snippet t(:fluidTranslate) do |snip|
   snip.trigger = "<f:translate"
   snip.expansion = "<f:translate key=\"${1:key}\"></f:translate>${2}"
+end
+
+snippet t(:fluidTranslateWithArguments) do |snip|
+  snip.trigger = "<f:translate"
+  snip.expansion = "<f:translate key=\"${1:key}\" arguments=\"{0: ${2:var}}\"></f:translate>${3}"
 end
 
 snippet t(:fluidIf) do |snip|
@@ -67,6 +82,28 @@ snippet t(:fluidCount) do |snip|
   snip.expansion = "<f:count subject=\"${1:myarray}\"></f:count>${2}"
 end
 
+snippet t(:fluidDebug) do |snip|
+  snip.trigger = "<f:debug"
+  snip.expansion = "<f:debug title=\"${1:title}\">{${2:object}}</f:debug>"
+end
+
+
+
+
+# Fluid-Link-Action
+#####################################
+snippet t(:fluidLinkAction) do |snip|
+  snip.trigger = "<f:link.action"
+  snip.expansion = "<f:link.action action=\"${1:action}\">${2:linktext}</f:link.action>"
+end
+snippet t(:fluidLinkActionWithController) do |snip|
+  snip.trigger = "<f:link.action"
+  snip.expansion = "<f:link.action action=\"${1:action}\" controller=\"${2:controller}\">${3:linktext}</f:link.action>"
+end
+snippet t(:fluidLinkActionWithControllerAndArguments) do |snip|
+  snip.trigger = "<f:link.action"
+  snip.expansion = "<f:link.action action=\"${1:action}\" controller=\"${2:controller}\" alt=\"{${3:name}:${4:variable}}\">${5:linktext}</f:link.action>"
+end
 
 
 
