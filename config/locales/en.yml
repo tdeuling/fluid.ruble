@@ -1,6 +1,7 @@
 en:
   bundle_name: 'Fluid'
   #
+  #
   fluidNamespace: 'Fluid namespace'
   fluidLayout: 'Fluid layout'
   fluidSection: 'Fluid section'
@@ -19,15 +20,16 @@ en:
   fluidTranslateWithArguments: 'Fluid translate with arguments'
   #
   #
-  fluidIf: 'Fluid if'
-  fluidThen: 'Fluid then'
-  fluidElse: 'Fluid else'
+  fluidIf:      'Fluid if <f:if condition="{condition}"></f:if>'
+  fluidIfCount: 'Fluid if <f:if condition="{f:count(subject: product.images)}"></f:if>'
+  fluidThen:    'Fluid then <f:then></f:then>'
+  fluidElse:    'Fluid else <f:else></f:else>'
   #
-  fluidIfIterationIsOdd: 'Fluid if iteration is odd'
-  fluidIfIterationIsEven: 'Fluid if iteration is even'
-  fluidIfIterationIsFirst: 'Fluid if iteration is first'
-  fluidIfIterationIsLast: 'Fluid if iteration is last'
-  fluidIfIterationModulo: 'Fluid if iteration modulo'
+  fluidIfIterationIsOdd:   'Fluid if iteration is odd <f:if condition="{itemIteration.isOdd}"></f:if>'
+  fluidIfIterationIsEven:  'Fluid if iteration is even <f:if condition="{itemIteration.isEven}"></f:if>'
+  fluidIfIterationIsFirst: 'Fluid if iteration is first <f:if condition="{itemIteration.isFirst}"></f:if>'
+  fluidIfIterationIsLast:  'Fluid if iteration is last <f:if condition="{itemIteration.isLast}"></f:if>'
+  fluidIfIterationModulo:  'Fluid if iteration modulo <f:if condition="{itemIteration.cycle} % 3"></f:if>'
   #
   #
   fluidImage: 'Fluid image'
@@ -35,7 +37,11 @@ en:
   #
   fluidCount: 'Fluid count <f:count subject=\"{product.images}\"></f:count>'
   fluidCountInline: 'Fluid count inline {f:count(product.images)} > 0}'
-  fluidDebug: 'Fluid debug'
+  #
+  fluidDebug:       'Fluid debug <f:debug title="title">{object}</f:debug>'
+  fluidDebugInline: 'Fluid debug inline {object -> f:debug(title: \'title\')}'
+  fluidDebugAll:    'Fluid debug all available variables <f:debug>{_all}</f:debug>'
+  #
   fluidComment: 'Fluid comment'
   #
   #

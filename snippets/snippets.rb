@@ -97,6 +97,13 @@ snippet t(:fluidIf) do |snip|
   snip.expansion = "<f:if condition=\"{${1:condition}}\">$0</f:if>"
   snip.category = "Fluid Tag"
 end
+snippet t(:fluidIfCount) do |snip|
+  snip.trigger = "<f:if"
+  snip.expansion = "<f:if condition=\"{f:count(subject: ${1:product.images})}\">$0</f:if>"
+  snip.category = "Fluid Tag"
+end
+
+
 snippet t(:fluidThen) do |snip|
   snip.trigger = "<f:then"
   snip.expansion = "<f:then>$0</f:then>"
@@ -128,6 +135,7 @@ snippet t(:fluidIfIterationIsLast) do |snip|
   snip.expansion = "<f:if condition=\"{itemIteration.isLast}\">$0</f:if>"
   snip.category = "Fluid Tag"
 end
+# <f:if condition="{v:math.sum(a:itemIteration.cycle, fail: 1, b: '3')} % 4">
 snippet t(:fluidIfIterationModulo) do |snip|
   snip.trigger = "<f:if"
   snip.expansion = "<f:if condition=\"{itemIteration.cycle} % ${1:number}\">$0</f:if>"
@@ -168,11 +176,27 @@ snippet t(:fluidDebug) do |snip|
   snip.expansion = "<f:debug title=\"${1:title}\">{${2:object}}</f:debug>$0"
   snip.category = "Fluid Tag"
 end
+snippet t(:fluidDebugInline) do |snip|
+  snip.trigger = "{f:debug"
+  snip.expansion = "{${1:object} -> f:debug(title: '${2:title}')}$0"
+  snip.category = "Fluid Inline"
+end
+snippet t(:fluidDebugAll) do |snip|
+  snip.trigger = "<f:debug"
+  snip.expansion = "<f:debug>{_all}</f:debug>$0"
+  snip.category = "Fluid Tag"
+end
+
 
 snippet t(:fluidComment) do |snip|
   snip.trigger = "<f:comment"
-  snip.expansion = "<f:comment>${1:comment}</f:comment>$0"
+  snip.expansion = "<f:comment>\n"
+  snip.expansion+= "\tDate: `date`\n"
+  snip.expansion+= "</f:comment>\n$0"
   snip.category = "Fluid Tag"
+  snip.tags = ['TYPO3','Fluid']
+  snip.icon_path = "icons/my_map_icon.png"
+  snip.description = "Creates a map object and adds the following annotations: current location, paris, and ontario"
 end
 
 
@@ -259,6 +283,7 @@ snippet t(:fluidTemplateIfIterationModulo) do |snip|
   snip.expansion += "\t</f:if>\n"
   snip.category = "Fluid Code-Snippets"
 end
+
 
 
 
