@@ -23,6 +23,12 @@ en:
   fluidThen: 'Fluid then'
   fluidElse: 'Fluid else'
   #
+  fluidIfIterationIsOdd: 'Fluid if iteration is odd'
+  fluidIfIterationIsEven: 'Fluid if iteration is even'
+  fluidIfIterationIsFirst: 'Fluid if iteration is first'
+  fluidIfIterationIsLast: 'Fluid if iteration is last'
+  fluidIfIterationModulo: 'Fluid if iteration modulo'
+  #
   #
   fluidImage: 'Fluid image'
   #
@@ -46,3 +52,9 @@ en:
   fluidLinkPage: 'Fluid link page'
   fluidLinkPageWithAdditionalParams: 'Fluid link page with additional-params'
   fluidLinkPageWithPageType: 'Fluid link page with page-type'
+  #
+  #
+  #
+  #
+  fluidTemplateFlashMessage:      'Fluid Template Flash-Message'
+  fluidTemplateIfIterationModulo: 'Fluid Template if iteration modulo'
