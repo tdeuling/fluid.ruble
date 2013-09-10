@@ -5,7 +5,7 @@ bundle do |bundle|
   bundle.contact_email_rot_13 = 'glcb3@pbqvat.zf'
   bundle.display_name = t(:bundle_name)
   bundle.description =  <<END
-<a href="http://wiki.typo3.org/Fluid">Fluid</a> is a template engine used by Typo3 and Flow3
+<a href="http://wiki.typo3.org/Fluid">Fluid</a> is a template engine used by Typo3 and Flow3 - http://coding.ms 
 END
   increase_indent = /^\s*.*(:|-) ?(&\w+)?(\{[^}"']*|\([^)"']*)?$/
   decrease_indent = /^\s+\}$/

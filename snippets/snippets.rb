@@ -97,6 +97,11 @@ snippet t(:fluidIf) do |snip|
   snip.expansion = "<f:if condition=\"{${1:condition}}\">$0</f:if>"
   snip.category = "Fluid Tag"
 end
+snippet t(:fluidIfString) do |snip|
+  snip.trigger = "<f:if"
+  snip.expansion = "<f:if condition=\"{0:${1:variable}} == {0:'${2:compare}'}\">$0</f:if>"
+  snip.category = "Fluid Tag"
+end
 snippet t(:fluidIfCount) do |snip|
   snip.trigger = "<f:if"
   snip.expansion = "<f:if condition=\"{f:count(subject: ${1:product.images})}\">$0</f:if>"
