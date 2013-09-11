@@ -125,20 +125,40 @@ snippet t(:fluidIfIterationIsOdd) do |snip|
   snip.expansion = "<f:if condition=\"{itemIteration.isOdd}\">$0</f:if>"
   snip.category = "Fluid Tag"
 end
+snippet t(:fluidIfIterationIsOddInline) do |snip|
+  snip.trigger = "{f:if"
+  snip.expansion = "{f:if(condition: itemIteration.isOdd, then: 'odd')}"
+  snip.category = "Fluid Inline"
+end
 snippet t(:fluidIfIterationIsEven) do |snip|
   snip.trigger = "<f:if"
   snip.expansion = "<f:if condition=\"{itemIteration.isEven}\">$0</f:if>"
   snip.category = "Fluid Tag"
+end
+snippet t(:fluidIfIterationIsEvenInline) do |snip|
+  snip.trigger = "{f:if"
+  snip.expansion = "{f:if(condition: itemIteration.isEven, then: 'even')}"
+  snip.category = "Fluid Inline"
 end
 snippet t(:fluidIfIterationIsFirst) do |snip|
   snip.trigger = "<f:if"
   snip.expansion = "<f:if condition=\"{itemIteration.isFirst}\">$0</f:if>"
   snip.category = "Fluid Tag"
 end
+snippet t(:fluidIfIterationIsFirstInline) do |snip|
+  snip.trigger = "{f:if"
+  snip.expansion = "{f:if(condition: itemIteration.isFirst, then: 'first')}"
+  snip.category = "Fluid Inline"
+end
 snippet t(:fluidIfIterationIsLast) do |snip|
   snip.trigger = "<f:if"
   snip.expansion = "<f:if condition=\"{itemIteration.isLast}\">$0</f:if>"
   snip.category = "Fluid Tag"
+end
+snippet t(:fluidIfIterationIsLastInline) do |snip|
+  snip.trigger = "{f:if"
+  snip.expansion = "{f:if(condition: itemIteration.isLast, then: 'last')}"
+  snip.category = "Fluid Inline"
 end
 # <f:if condition="{v:math.sum(a:itemIteration.cycle, fail: 1, b: '3')} % 4">
 snippet t(:fluidIfIterationModulo) do |snip|

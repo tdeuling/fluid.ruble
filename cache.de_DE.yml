@@ -341,7 +341,7 @@ children:
   customProperties:
     prefix_values: ['<f:if']
   description: null
-  displayName: Fluid if iteration is odd <f:if condition="{itemIteration.isOdd}"></f:if>
+  displayName: Fluid if iteration is odd          | <f:if condition="{itemIteration.isOdd}"></f:if>
   expansion: <f:if condition="{itemIteration.isOdd}">$0</f:if>
   iconPath: null
   input: [none]
@@ -356,11 +356,31 @@ children:
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
+  category: Fluid Inline
+  customProperties:
+    prefix_values: ['{f:if']
+  description: null
+  displayName: 'Fluid if iteration is odd inline   | {f:if(condition: itemIteration.isOdd,
+    then: ''odd'')}'
+  expansion: '{f:if(condition: itemIteration.isOdd, then: ''odd'')}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
   category: Fluid Tag
   customProperties:
     prefix_values: ['<f:if']
   description: null
-  displayName: Fluid if iteration is even <f:if condition="{itemIteration.isEven}"></f:if>
+  displayName: Fluid if iteration is even         | <f:if condition="{itemIteration.isEven}"></f:if>
   expansion: <f:if condition="{itemIteration.isEven}">$0</f:if>
   iconPath: null
   input: [none]
@@ -375,11 +395,31 @@ children:
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
+  category: Fluid Inline
+  customProperties:
+    prefix_values: ['{f:if']
+  description: null
+  displayName: 'Fluid if iteration is even inline  | {f:if(condition: itemIteration.isEven,
+    then: ''even'')}'
+  expansion: '{f:if(condition: itemIteration.isEven, then: ''even'')}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
   category: Fluid Tag
   customProperties:
     prefix_values: ['<f:if']
   description: null
-  displayName: Fluid if iteration is first <f:if condition="{itemIteration.isFirst}"></f:if>
+  displayName: Fluid if iteration is first        | <f:if condition="{itemIteration.isFirst}"></f:if>
   expansion: <f:if condition="{itemIteration.isFirst}">$0</f:if>
   iconPath: null
   input: [none]
@@ -394,12 +434,13 @@ children:
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
-  category: Fluid Tag
+  category: Fluid Inline
   customProperties:
-    prefix_values: ['<f:if']
+    prefix_values: ['{f:if']
   description: null
-  displayName: Fluid if iteration is last <f:if condition="{itemIteration.isLast}"></f:if>
-  expansion: <f:if condition="{itemIteration.isLast}">$0</f:if>
+  displayName: 'Fluid if iteration is first inline | {f:if(condition: itemIteration.isFirst,
+    then: ''first'')}'
+  expansion: '{f:if(condition: itemIteration.isFirst, then: ''first'')}'
   iconPath: null
   input: [none]
   inputPath: null
@@ -417,7 +458,46 @@ children:
   customProperties:
     prefix_values: ['<f:if']
   description: null
-  displayName: Fluid if iteration modulo <f:if condition="{itemIteration.cycle} % 3"></f:if>
+  displayName: Fluid if iteration is last         | <f:if condition="{itemIteration.isLast}"></f:if>
+  expansion: <f:if condition="{itemIteration.isLast}">$0</f:if>
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: Fluid Inline
+  customProperties:
+    prefix_values: ['{f:if']
+  description: null
+  displayName: 'Fluid if iteration is last inline  | {f:if(condition: itemIteration.isLast,
+    then: ''last'')}'
+  expansion: '{f:if(condition: itemIteration.isLast, then: ''last'')}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: Fluid Tag
+  customProperties:
+    prefix_values: ['<f:if']
+  description: null
+  displayName: Fluid if iteration modulo          | <f:if condition="{itemIteration.cycle} % 3"></f:if>
   expansion: <f:if condition="{itemIteration.cycle} % ${1:number}">$0</f:if>
   iconPath: null
   input: [none]

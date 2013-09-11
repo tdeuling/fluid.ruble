@@ -26,11 +26,16 @@ en:
   fluidThen:     "Fluid then <f:then></f:then>"
   fluidElse:     "Fluid else <f:else></f:else>"
   #
-  fluidIfIterationIsOdd:   "Fluid if iteration is odd <f:if condition=\"{itemIteration.isOdd}\"></f:if>"
-  fluidIfIterationIsEven:  "Fluid if iteration is even <f:if condition=\"{itemIteration.isEven}\"></f:if>"
-  fluidIfIterationIsFirst: "Fluid if iteration is first <f:if condition=\"{itemIteration.isFirst}\"></f:if>"
-  fluidIfIterationIsLast:  "Fluid if iteration is last <f:if condition=\"{itemIteration.isLast}\"></f:if>"
-  fluidIfIterationModulo:  "Fluid if iteration modulo <f:if condition=\"{itemIteration.cycle} % 3\"></f:if>"
+  fluidIfIterationIsOdd:         "Fluid if iteration is odd          | <f:if condition=\"{itemIteration.isOdd}\"></f:if>"
+  fluidIfIterationIsOddInline:   "Fluid if iteration is odd inline   | {f:if(condition: itemIteration.isOdd, then: 'odd')}"
+  fluidIfIterationIsEven:        "Fluid if iteration is even         | <f:if condition=\"{itemIteration.isEven}\"></f:if>"
+  fluidIfIterationIsEvenInline:  "Fluid if iteration is even inline  | {f:if(condition: itemIteration.isEven, then: 'even')}"
+  fluidIfIterationIsFirst:       "Fluid if iteration is first        | <f:if condition=\"{itemIteration.isFirst}\"></f:if>"
+  fluidIfIterationIsFirstInline: "Fluid if iteration is first inline | {f:if(condition: itemIteration.isFirst, then: 'first')}"
+  fluidIfIterationIsLast:        "Fluid if iteration is last         | <f:if condition=\"{itemIteration.isLast}\"></f:if>"
+  fluidIfIterationIsLastInline:  "Fluid if iteration is last inline  | {f:if(condition: itemIteration.isLast, then: 'last')}"
+  #
+  fluidIfIterationModulo:        "Fluid if iteration modulo          | <f:if condition=\"{itemIteration.cycle} % 3\"></f:if>"
   #
   #
   fluidImage: "Fluid image"
