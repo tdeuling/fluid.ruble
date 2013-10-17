@@ -56,7 +56,7 @@ children:
   customProperties:
     prefix_values: ['{namespace']
   description: null
-  displayName: Fluid namespace
+  displayName: Fluid namespace | {namespace ftm = CodingMs\Ftm\ViewHelpers}
   expansion: '{namespace ${1:name} = ${1:viewHelper}}'
   iconPath: null
   input: [none]
@@ -75,7 +75,7 @@ children:
   customProperties:
     prefix_values: ['<f:layout']
   description: null
-  displayName: Fluid layout
+  displayName: Fluid layout    | <f:layout name="name"></f:layout>
   expansion: <f:layout name="${1:name}"></f:layout>$0
   iconPath: null
   input: [none]
@@ -94,7 +94,7 @@ children:
   customProperties:
     prefix_values: ['<f:section']
   description: null
-  displayName: Fluid section
+  displayName: Fluid section   | <f:section name="name"></f:section>
   expansion: <f:section name="${1:name}">$0</f:section>
   iconPath: null
   input: [none]
@@ -208,7 +208,7 @@ children:
   customProperties:
     prefix_values: ['<f:translate']
   description: null
-  displayName: Fluid translate
+  displayName: Fluid translate | <f:translate key="key"></f:translate>
   expansion: <f:translate key="${1:key}"></f:translate>$0
   iconPath: null
   input: [none]
@@ -227,7 +227,8 @@ children:
   customProperties:
     prefix_values: ['<f:translate']
   description: null
-  displayName: Fluid translate with arguments
+  displayName: 'Fluid translate with arguments | <f:translate key="key" arguments="{0:
+    var}"></f:translate>'
   expansion: '<f:translate key="${1:key}" arguments="{0: ${2:var}}"></f:translate>$0'
   iconPath: null
   input: [none]
@@ -246,7 +247,7 @@ children:
   customProperties:
     prefix_values: ['<f:if']
   description: null
-  displayName: Fluid if <f:if condition="{condition}"></f:if>
+  displayName: Fluid if        | <f:if condition="{condition}"></f:if>
   expansion: <f:if condition="{${1:condition}}">$0</f:if>
   iconPath: null
   input: [none]
@@ -265,7 +266,7 @@ children:
   customProperties:
     prefix_values: ['<f:if']
   description: null
-  displayName: Fluid if string <f:if condition="{0:variable} == {0:'compare'}"></f:if>
+  displayName: Fluid if string | <f:if condition="{0:variable} == {0:'compare'}"></f:if>
   expansion: <f:if condition="{0:${1:variable}} == {0:'${2:compare}'}">$0</f:if>
   iconPath: null
   input: [none]
@@ -284,7 +285,7 @@ children:
   customProperties:
     prefix_values: ['<f:if']
   description: null
-  displayName: 'Fluid if count <f:if condition="{f:count(subject: product.images)}"></f:if>'
+  displayName: 'Fluid if count  | <f:if condition="{f:count(subject: product.images)}"></f:if>'
   expansion: '<f:if condition="{f:count(subject: ${1:product.images})}">$0</f:if>'
   iconPath: null
   input: [none]
@@ -303,7 +304,7 @@ children:
   customProperties:
     prefix_values: ['<f:then']
   description: null
-  displayName: Fluid then <f:then></f:then>
+  displayName: Fluid then      | <f:then></f:then>
   expansion: <f:then>$0</f:then>
   iconPath: null
   input: [none]
@@ -322,7 +323,7 @@ children:
   customProperties:
     prefix_values: ['<f:else']
   description: null
-  displayName: Fluid else <f:else></f:else>
+  displayName: Fluid else      | <f:else></f:else>
   expansion: <f:else>$0</f:else>
   iconPath: null
   input: [none]
@@ -811,6 +812,25 @@ children:
   description: null
   displayName: Fluid link page with page-type
   expansion: <f:link.page pageUid="${1:pageUid}" pageType="${2:pageType}">${5:linktext}</f:link.page>$0
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: Fluid Tag
+  customProperties:
+    prefix_values: ['<f:link.email']
+  description: null
+  displayName: Fluid link email | <f:link.email email="foo\@bar.tld">
+  expansion: <f:link.email email="${1:foo@bar.tld}">${2:customLinkText}</f:link.email>$0
   iconPath: null
   input: [none]
   inputPath: null

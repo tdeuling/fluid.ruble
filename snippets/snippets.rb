@@ -10,6 +10,7 @@
 #end
 
 
+
 #snippet_category "my_category" do |category|
 #  category.icon_path = "icons/my_category.png"
 #end
@@ -18,21 +19,21 @@
 # Fluid-Header things
 #####################################
 snippet t(:fluidNamespace) do |snip|
-  snip.trigger = "{namespace"
+  snip.trigger   = "{namespace"
   snip.expansion = "{namespace ${1:name} = ${1:viewHelper}}"
-  snip.category = "Fluid Inline"
+  snip.category  = "Fluid Inline"
 end
  
 snippet t(:fluidLayout) do |snip|
-  snip.trigger = "<f:layout"
+  snip.trigger   = "<f:layout"
   snip.expansion = "<f:layout name=\"${1:name}\"></f:layout>$0"
-  snip.category = "Fluid Tag"
+  snip.category  = "Fluid Tag"
 end
  
 snippet t(:fluidSection) do |snip|
-  snip.trigger = "<f:section"
+  snip.trigger   = "<f:section"
   snip.expansion = "<f:section name=\"${1:name}\">$0</f:section>"
-  snip.category = "Fluid Tag"
+  snip.category  = "Fluid Tag"
 end
  
  
@@ -287,6 +288,27 @@ snippet t(:fluidLinkPageWithPageType) do |snip|
   snip.category = "Fluid Tag"
 end
 
+
+
+
+# Fluid-Link-Page
+#####################################
+snippet t(:fluidLinkEmail) do |snip|
+  snip.trigger = "<f:link.email"
+  snip.expansion = "<f:link.email email=\"${1:foo@bar.tld}\">${2:customLinkText}</f:link.email>$0"
+  snip.category = "Fluid Tag"
+end
+
+
+
+
+# Fluid-Form-Select
+#####################################
+#snippet t(:fluidFormSelectStatic) do |snip|
+#  snip.trigger = "<f:form.select"
+#  snip.expansion = "<f:form.select name=\"${1:name}\" options=\"{payPal: 'PayPal', visa: 'Visa Card'}\"></f:form.select>$0"
+#  snip.category = "Fluid Tag"
+#end
 
 
 

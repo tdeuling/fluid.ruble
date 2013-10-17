@@ -2,9 +2,9 @@ de:
   bundle_name: "Fluid"
   #
   #
-  fluidNamespace: "Fluid namespace"
-  fluidLayout: "Fluid layout"
-  fluidSection: "Fluid section"
+  fluidNamespace: "Fluid namespace | {namespace ftm = CodingMs\Ftm\ViewHelpers}"
+  fluidLayout:    "Fluid layout    | <f:layout name=\"name\"></f:layout>"
+  fluidSection:   "Fluid section   | <f:section name=\"name\"></f:section>"
   #
   #
   fluidRenderSection: "Fluid render section"
@@ -16,15 +16,15 @@ de:
   fluidFlashMessagesInDiv: "Fluid flashMessages div structured"
   #
   #
-  fluidTranslate: "Fluid translate"
-  fluidTranslateWithArguments: "Fluid translate with arguments"
+  fluidTranslate: "Fluid translate | <f:translate key=\"key\"></f:translate>"
+  fluidTranslateWithArguments: "Fluid translate with arguments | <f:translate key=\"key\" arguments=\"{0: var}\"></f:translate>"
   #
   #
-  fluidIf:       "Fluid if <f:if condition=\"{condition}\"></f:if>"
-  fluidIfCount:  "Fluid if count <f:if condition=\"{f:count(subject: product.images)}\"></f:if>"
-  fluidIfString: "Fluid if string <f:if condition=\"{0:variable} == {0:'compare'}\"></f:if>"
-  fluidThen:     "Fluid then <f:then></f:then>"
-  fluidElse:     "Fluid else <f:else></f:else>"
+  fluidIf:       "Fluid if        | <f:if condition=\"{condition}\"></f:if>"
+  fluidIfCount:  "Fluid if count  | <f:if condition=\"{f:count(subject: product.images)}\"></f:if>"
+  fluidIfString: "Fluid if string | <f:if condition=\"{0:variable} == {0:'compare'}\"></f:if>"
+  fluidThen:     "Fluid then      | <f:then></f:then>"
+  fluidElse:     "Fluid else      | <f:else></f:else>"
   #
   fluidIfIterationIsOdd:         "Fluid if iteration is odd          | <f:if condition=\"{itemIteration.isOdd}\"></f:if>"
   fluidIfIterationIsOddInline:   "Fluid if iteration is odd inline   | {f:if(condition: itemIteration.isOdd, then: 'odd')}"
@@ -66,6 +66,10 @@ de:
   fluidLinkPageWithPageType: "Fluid link page with page-type"
   #
   #
+  fluidLinkEmail: "Fluid link email | <f:link.email email=\"foo\@bar.tld\">"
+  #
+  #
+  #fluidFormSelectStatic: "<f:form.select name=\"name\" options=\"{payPal: 'PayPal', visa: 'Visa Card'}\" />"
   #
   #
   fluidTemplateFlashMessage:      "Fluid Template Flash-Message"
